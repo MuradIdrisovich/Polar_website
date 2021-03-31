@@ -1,0 +1,21 @@
+.consultation {
+    background: url('../img/bg2.png') center (center/cover) no-repeat;
+    height: 680px;
+    padding: 100px 0px 108px 0px;
+    &__subheader {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        color: $main-color;
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+        line-height: 10px;
+    }
+}

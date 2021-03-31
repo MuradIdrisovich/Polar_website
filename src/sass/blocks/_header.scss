@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        width: 250px;
+    }
+    &__official {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        color: #FFFFFF;
+        span {
+            display: block;
+            font-size: 18px;
+            line-height: 29px;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        a {
+            margin-bottom: 4px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: right;
+            color: #FFFFFF;
+            text-decoration: none;
+            display: block;
+        }
+    }
+}

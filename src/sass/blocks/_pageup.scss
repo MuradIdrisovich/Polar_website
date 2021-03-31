@@ -1,0 +1,16 @@
+.pageup {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 100px;
+    right: 80px;
+    animation-name: 'heartbeat';
+    animation-duration: 0.9s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    img {
+        width: 100%;
+    }
+    
+}

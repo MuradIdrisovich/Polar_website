@@ -1,0 +1,48 @@
+.footer {
+    position: relative;
+    height: 630px;
+    &__info {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 460px;
+        height: 270px;
+        background: #C70101;
+        padding: 50px 53px 56px 53px;
+        text-align: center;
+    }
+    &__address {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__phone {
+        margin-top: 36px;
+        line-height: 50px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #FFFFFF;
+        &:hover {
+            color: rgb(116, 221, 116);
+        }
+    }
+    &__social {
+        margin-top: 36px;
+        display: flex;
+        justify-content: center;
+        &__round {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #FFFFFF;
+            width: 53px;
+            height: 53px;
+            border-radius: 100%;
+            margin: 0px 14px;
+        }
+    }
+    
+}

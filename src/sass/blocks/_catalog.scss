@@ -1,0 +1,163 @@
+.catalog {
+    min-height: 1103px;
+    &__tabs {
+        margin-top: 47px;
+        list-style: none;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+    }
+    &__tab {
+        margin: 0 5px;
+        text-align: center;
+        width: 220px;
+        height: 50px;
+        border: 2px solid #D0D0D0;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: #6B6B6B;
+        transform: skewX(-20deg);
+        div {
+            transform: skewX(20deg);
+        }
+        &_active {
+            background: $main-color;
+            color: white;
+            border: none;
+        }
+        &:hover {
+            box-shadow: 4px 4px 10px $main-color;
+            border: none;
+        }
+    }
+    &__content {
+        margin-top: 57px;
+        display: none;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
+    }
+    &__item {
+        width: 303px;
+        height: 442px;
+        border: 2px solid #E8E8E8;
+        padding: 20px;
+        text-align: center;
+        // margin: 6.8px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        &__header {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #0D0D0D;
+        }
+        &__descr {
+            margin-top: 15px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            color: #0D0D0D;
+        }
+        &__link {
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration-line: underline;
+            color: #C70101;
+            &:hover {
+                color: $main-color;
+            }
+        }
+        hr {
+            height: 2px;
+            background: #E8E8E8;
+            margin: 20px 0px;
+        }
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+        &__oldprice {
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration-line: line-through;
+            color: #555555;
+        }
+        &__newprice {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 20px;
+            color: #050505;
+        }
+        &__button {
+            width: 131px;
+            height: 40px;
+        }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+            
+        }
+        &__face {
+            width: 50%;
+            transition: all 0.5s;
+            transform: translateX(-100%);
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__back {
+            position: relative;
+            text-align: left;
+            width: 50%;
+            transition: all 0.5s;
+            transform: translateX(0%);
+            margin-left: 20px;
+            padding-right: 15px;
+            &_active {
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+        }
+        &__list {
+            list-style-type: none;
+            margin: 0px;
+            padding-left: 15px;
+            li {
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background: $main-color;
+                    left: -10px;
+                    top: 9px;
+                }
+            }
+            
+        }
+        &__goback {
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration-line: underline;
+            color: #C70101;
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(calc(-50% - 15px));
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+    }
+    }

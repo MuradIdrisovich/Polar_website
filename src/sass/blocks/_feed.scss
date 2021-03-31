@@ -1,0 +1,31 @@
+.feed {
+    &__header {
+        margin-top: 80px;
+    }
+    &__item {
+        display: flex;
+        margin-top: 60px;
+        &__img {
+            margin-right: 60px;
+            width: 169px;
+            height: 169px;
+        }
+        &__descr {
+            span {
+                font-weight: bold;
+                font-size: 18px;
+                color: #0D0D0D;
+            }
+            .marathon {
+                font-weight: 500;
+                font-size: 14px;
+                color: #646464;
+            }
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px;
+            color: #0D0D0D;
+        }
+    }
+
+}
